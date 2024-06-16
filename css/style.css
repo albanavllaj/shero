@@ -79,3 +79,46 @@ img{
 article, button{
     width: 70%;
 }
+
+
+
+/** Carousel **/
+
+.carousel{
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container{
+    height: 300px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#slide-container .btn{
+    position: absolute;
+    top: calc(50% - 20px);
+    height: 15px;
+    width: 15px;
+    border-left: 8px solid #696969;
+    border-top: 8px solid #696969;
+    cursor: pointer;
+}
+
+#slider-container .btn:hover{
+    transform: scale(1.2);
+}
+#slide-container .btn.inactive{
+    border-color: #282828;
+}
+
+#silder
